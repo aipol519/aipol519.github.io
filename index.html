@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | salesgame</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" width=480 height=960 style="width: 480px; height: 960px; background: #231F20"></canvas>
+    <script src="Build/aipol519.github.io.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/aipol519.github.io.data.br",
+        frameworkUrl: "Build/aipol519.github.io.framework.js.br",
+        codeUrl: "Build/aipol519.github.io.wasm.br",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "salesgame",
+        productVersion: "1.0.2",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
+  </body>
+</html>
